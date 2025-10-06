@@ -1,5 +1,5 @@
 :root {
-    --main-color: #ffcc00
+    --main-color: #ffcc00;
 }
 
 * {
@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: "work sans", sans-serif;
+    font-family: "Work Sans", sans-serif;
 }
 
 html {
@@ -64,7 +64,6 @@ html {
 
     .special-heading+p {
         margin-top: -20px;
-
     }
 }
 
@@ -181,7 +180,7 @@ html {
     margin: 0;
     font-weight: bold;
     font-size: 50px;
-    color: var(--main-color)
+    color: var(--main-color);
 }
 
 .landing .intro-text p {
@@ -244,11 +243,9 @@ html {
         flex-direction: column;
         text-align: center;
     }
-}
 
-@media (max-width: 767px) {
     .services .services-content .srv i {
-        display: contents;
+        margin-bottom: 20px;
     }
 }
 
@@ -267,7 +264,7 @@ html {
 
 .services .services-content .srv .text p {
     color: #777;
-    font-weight: 300px;
+    font-weight: 300;
     line-height: 1.6;
 }
 
@@ -380,13 +377,6 @@ html {
     right: -150px;
 }
 
-
-.about .about-content .image {
-    position: relative;
-    width: 250px;
-    height: 375px;
-}
-
 .about .about-content .image img {
     max-width: 100%;
 }
@@ -412,6 +402,19 @@ html {
     color: #777;
 }
 
+@media (max-width: 767px) {
+    .about .about-content .image::after {
+        border-left: 60px solid var(--main-color);
+        border-bottom: 60px solid var(--main-color);
+        max-width: 50px;
+        right: -80px;
+    }
+
+    .about .about-content.image::before {
+        width: 60px;
+    }
+}
+
 .contact {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -420,7 +423,6 @@ html {
 
 .contact .info {
     padding-top: 60px;
-    padding-bottom: #2c4755;
     text-align: center;
 }
 
